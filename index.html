@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaji Karyawan</title>
+    <style>
+        .latar {
+            width: 50%;
+            margin: 100px auto 50px auto;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 5px 20px;
+            text-align: center;
+        }
+
+        th {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+
+        .content {
+            display: flex;
+            width: 50%;
+            margin: auto;
+            justify-content: center;
+        }
+
+        button {
+            height: 20px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="latar">
+        <h1>Gaji Karyawan</h1>
+    </div>
+    <div class="content">
+        <form action="">
+            <label for="nik" style="margin-left: 10px;">NIK</label>
+            <input type="text" id="nik" style="margin-left: 10px; width: 100px;">
+            <label for="nama" style="margin-left: 10px;">Nama</label>
+            <input type="text" id="nama" style="margin-left: 10px;">
+            <label for="hari" style="margin-left: 10px;">Jumlah Hari Masuk</label>
+            <input type="text" id="hari" style="width: 50px; margin-right: 50px; margin-left: 10px;">
+        </form>
+        <button onclick="submit()">Submit</button>
+    </div>
+    <div class="table-gaji">
+        <table align="center" style="border-collapse: collapse; margin-top: 20px;">
+            <tr>
+                <th>No</th>
+                <th>NIK</th>
+                <th>Nama</th>
+                <th>Jumlah Hari Masuk</th>
+                <th>Gaji Per Hari</th>
+                <th>Total Gaji</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>000001</td>
+                <td>Anjar</td>
+                <td id="hari1">21</td>
+                <td>750000</td>
+                <td id="result1"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>000002</td>
+                <td>Angga</td>
+                <td id="hari2">26</td>
+                <td>750000</td>
+                <td id="result2"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
